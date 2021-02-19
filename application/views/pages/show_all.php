@@ -1,9 +1,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="./assets/css/css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link href="<?= base_url('assets/css/css') ?>" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href=" <?= base_url('assets/css/font-awesome.min.css') ?>">
+	<link rel="stylesheet" href=" <?= base_url('assets/css/style.css') ?> ">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 								<?php foreach ($stuff as $item) : ?>
 									<tr>
 										<td><?= $item->name ?></td>
-										<td><img width:"50px" height="50px" src="assets/team/mark.jpg" onerror="this.onerror=null; this.src='assets/images/24.jpg'"></td>
+										<td><img width:"50px" height="50px" src=" <?= 'httt' ?> " onerror="this.onerror=null; this.src='<?= base_url('assets/images/24.jpg') ?>'"> </td>
 										<td><?= $item->notes ?></td>
 										<td><a href='<?= $item->website ?>'><?= $item->website ?></a></td>
 									</tr>
@@ -42,10 +42,13 @@
 			</div>
 		</div>
 	</section>
-	<script src="./assets/js/jquery.min.js.download"></script>
-	<script src="./assets/js/popper.js.download"></script>
-	<script src="./assets/js/bootstrap.min.js.download"></script>
-	<script src="./assets/js/main.js.download"></script>
+	<nav class='text-center'>
+		<?= $links ?>		
+	</nav>
+	<script src="<?= base_url('assets/js/jquery.min.js.download') ?> "></script>
+	<script src="<?= base_url('/assets/js/popper.js.download') ?>"></script>
+	<script src="<?= base_url('assets/js/bootstrap.min.js.download') ?>"></script>
+	<script src="<?= base_url('assets/js/main.js.download') ?>"></script>
 
 
 </body>
